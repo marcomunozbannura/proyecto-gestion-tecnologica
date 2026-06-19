@@ -16,49 +16,46 @@
       linear-gradient(168deg, #0C2240 0%, #0A1A30 52%, #081427 100%);
   }
   .grid{ position:absolute; inset:0; background-image:radial-gradient(rgba(94,227,225,0.5) 1.5px, transparent 1.5px); background-size:56px 56px; opacity:0.045; }
-  .pad{ position:relative; z-index:2; height:100%; padding:96px 88px 84px; display:flex; flex-direction:column; justify-content:space-between; }
+  .pad{ position:relative; z-index:2; height:100%; padding:96px 88px 86px; display:flex; flex-direction:column; justify-content:space-between; }
   .pad>*{ flex-shrink:0; }
 
-  /* marca (sin monograma) */
   .brandline{ display:flex; align-items:center; gap:18px; font-size:29px; font-weight:700; color:#C3D0E0; letter-spacing:0.02em; }
   .brandline .bar{ width:54px; height:8px; border-radius:4px; background:#0EA5A4; flex:none; }
 
-  /* título grande */
-  .h{ font-size:90px; font-weight:800; line-height:1.04; letter-spacing:-0.022em; color:#fff; margin-top:40px; }
+  /* título tamaño medio */
+  .h{ font-size:78px; font-weight:800; line-height:1.06; letter-spacing:-0.02em; color:#fff; margin-top:38px; }
   .h .t{ color:#0EA5A4; }
 
-  /* slogan con StartUp estilizado (cambia la letra) */
-  .slogan{ font-size:44px; font-weight:600; color:#AEBCCF; margin-top:26px; }
+  .slogan{ font-size:42px; font-weight:600; color:#AEBCCF; margin-top:24px; }
   .slogan .k{ font-weight:800; letter-spacing:-0.01em; }
   .slogan .k .s1{ color:#EAF1F8; }
   .slogan .k .s2{ color:#0EA5A4; }
 
-  /* etiqueta oferta */
   .tag{ display:inline-flex; align-items:center; gap:15px; align-self:flex-start;
     border:1.5px solid rgba(94,227,225,0.55); border-radius:999px; padding:13px 26px;
-    font-size:25px; font-weight:800; letter-spacing:0.13em; color:#5FE3E1; text-transform:uppercase; margin-top:34px; }
+    font-size:24px; font-weight:800; letter-spacing:0.13em; color:#5FE3E1; text-transform:uppercase; margin-top:32px; }
   .tag .d{ width:14px; height:14px; border-radius:50%; background:#25D366; box-shadow:0 0 0 6px rgba(37,211,102,0.16); }
   .tag .sep{ color:#3C5170; }
   .tag .muted{ color:#7C8DA3; }
 
-  /* propuesta de valor */
-  .vp{ margin-top:50px; }
-  .vp .lab{ font-size:21px; font-weight:800; letter-spacing:0.20em; text-transform:uppercase; color:#5FE3E1; margin-bottom:26px; }
-  .vp .item{ display:flex; align-items:center; gap:24px; font-size:38px; font-weight:600; color:#E9EEF5; margin:21px 0; }
-  .vp .item .m{ width:30px; height:3px; background:#0EA5A4; border-radius:2px; flex:none; }
-  .motto{ margin-top:30px; padding-top:28px; border-top:1px solid rgba(255,255,255,0.10);
-    font-size:37px; font-weight:700; color:#fff; font-style:italic; line-height:1.3; }
+  /* propuesta de valor (zona central) */
+  .vp .lab{ font-size:22px; font-weight:800; letter-spacing:0.20em; text-transform:uppercase; color:#5FE3E1; margin-bottom:30px; }
+  .vp .item{ display:flex; align-items:center; gap:26px; font-size:39px; font-weight:600; color:#E9EEF5; margin:26px 0; }
+  .vp .item .m{ width:32px; height:3px; background:#0EA5A4; border-radius:2px; flex:none; }
+  .motto{ margin-top:38px; padding-top:34px; border-top:1px solid rgba(255,255,255,0.10);
+    font-size:38px; font-weight:700; color:#fff; font-style:italic; line-height:1.3; }
   .motto .t{ color:#5FE3E1; font-style:normal; }
 
   /* bloque inferior */
   .cta{ display:flex; align-items:center; justify-content:center; gap:22px;
     background:#25D366; color:#06381c; font-weight:800; font-size:46px; padding:34px; border-radius:18px; }
   .cta svg{ width:48px; height:48px; }
-  .contact{ margin-top:34px; }
-  .contact .lab{ font-size:21px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:#7C8DA3; margin-bottom:16px; }
-  .contact .em{ display:flex; align-items:center; gap:18px; font-size:33px; font-weight:700; color:#fff; margin:12px 0; }
-  .contact .em svg{ width:30px; height:30px; color:#5FE3E1; flex:none; }
-  .foot{ margin-top:28px; padding-top:22px; border-top:1px solid rgba(255,255,255,0.08);
+  .contact{ margin-top:36px; }
+  .contact .lab{ font-size:21px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:#7C8DA3; margin-bottom:18px; }
+  .contact .row{ display:flex; align-items:center; gap:18px; font-size:32px; font-weight:700; color:#fff; margin:13px 0; }
+  .contact .row svg{ width:30px; height:30px; color:#5FE3E1; flex:none; }
+  .contact .row .nm{ color:#7C8DA3; font-weight:600; font-size:28px; }
+  .foot{ margin-top:30px; padding-top:24px; border-top:1px solid rgba(255,255,255,0.08);
     font-size:24px; color:#7C8DA3; font-weight:600; }
 </style>
 </head>
@@ -66,27 +63,25 @@
   <div class="grid"></div>
   <div class="pad">
 
-    <!-- TOP -->
+    <!-- ZONA 1: marca + mensaje principal -->
     <div>
       <div class="brandline"><span class="bar"></span>Proyecto de Gestión Tecnológica</div>
-
       <h1 class="h">Procesos automáticos,<br><span class="t">resultados a la vista.</span></h1>
-
       <div class="slogan">Tu <span class="k"><span class="s1">Start</span><span class="s2">Up</span></span> de gestión tecnológica, en desarrollo.</div>
-
       <div class="tag"><span class="d"></span>Piloto gratis <span class="sep">·</span><span class="muted">sin compromiso</span></div>
-
-      <div class="vp">
-        <div class="lab">Nuestra propuesta de valor</div>
-        <div class="item"><span class="m"></span>Implementación rápida</div>
-        <div class="item"><span class="m"></span>Bajo costo de implementación</div>
-        <div class="item"><span class="m"></span>Información confiable y en tiempo real</div>
-        <div class="item"><span class="m"></span>Gestión real, no soluciones parche</div>
-        <div class="motto">Hacer que las cosas pasen —<span class="t">pero que pasen bien.</span></div>
-      </div>
     </div>
 
-    <!-- BOTTOM -->
+    <!-- ZONA 2: propuesta de valor -->
+    <div class="vp">
+      <div class="lab">Nuestra propuesta de valor</div>
+      <div class="item"><span class="m"></span>Implementación rápida</div>
+      <div class="item"><span class="m"></span>Bajo costo de implementación</div>
+      <div class="item"><span class="m"></span>Información confiable y en tiempo real</div>
+      <div class="item"><span class="m"></span>Gestión real, no soluciones parche</div>
+      <div class="motto">Hacer que las cosas pasen —<span class="t">pero que pasen bien.</span></div>
+    </div>
+
+    <!-- ZONA 3: acción + contacto -->
     <div>
       <div class="cta">
         <svg viewBox="0 0 24 24" fill="#06381c" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"/></svg>
@@ -94,8 +89,10 @@
       </div>
       <div class="contact">
         <div class="lab">Escríbenos</div>
-        <div class="em"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>marco.munoz.bannura@gmail.com</div>
-        <div class="em"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>benmorales.co@gmail.com</div>
+        <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>marco.munoz.bannura@gmail.com</div>
+        <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>benmorales.co@gmail.com</div>
+        <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+56 9 8174 3493 <span class="nm">· Marco</span></div>
+        <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+56 9 6835 8179 <span class="nm">· Benjamín</span></div>
       </div>
       <div class="foot">Startup de innovación tecnológica en desarrollo · soluciones para pymes que quieren crecer con control.</div>
     </div>
