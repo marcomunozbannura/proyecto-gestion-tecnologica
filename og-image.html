@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>OG Image · Proyecto de Gestión Tecnológica</title>
+
+<!-- Página standalone de EXACTAMENTE 1200x630 px, sin scroll.
+     Base para exportar og-image.png con una captura exacta 1200x630. -->
+
+<!-- Google Fonts: Plus Jakarta Sans (misma familia que la One Page) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html,body{ overflow:hidden; }
+  body{
+    width:1200px; height:630px;
+    background:#0B1F3A;
+    font-family:'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    color:#fff;
+  }
+
+  /* Contenedor exacto 1200x630 */
+  .og{
+    position:relative;
+    width:1200px; height:630px;
+    overflow:hidden;
+    padding:80px 90px;
+    display:flex; flex-direction:column; justify-content:center;
+    /* gradiente radial teal sutil (mismo lenguaje de marca) */
+    background:
+      radial-gradient(ellipse 900px 600px at 78% 28%, rgba(14,165,164,0.30), transparent 60%),
+      radial-gradient(ellipse 700px 500px at 12% 92%, rgba(14,165,164,0.12), transparent 55%),
+      #0B1F3A;
+  }
+
+  /* Retícula de puntos tenue (puramente CSS, evoca información ordenada) */
+  .og::before{
+    content:""; position:absolute; inset:0; pointer-events:none;
+    background-image:radial-gradient(rgba(94,227,225,0.5) 1px, transparent 1px);
+    background-size:26px 26px; opacity:0.05;
+  }
+
+  /* Nombre / marca arriba */
+  .brand{
+    position:relative; z-index:1;
+    display:flex; align-items:center; gap:18px; margin-bottom:34px;
+  }
+  .brand .bar{ width:64px; height:8px; border-radius:4px; background:#0EA5A4; }
+  .brand .name{ font-size:30px; font-weight:700; color:#C3D0E0; letter-spacing:0.01em; }
+
+  /* Badge gancho "Piloto gratis" en acento teal/verde */
+  .badge{
+    position:relative; z-index:1;
+    display:inline-flex; align-items:center; gap:14px; align-self:flex-start;
+    background:rgba(14,165,164,0.16); border:2px solid rgba(94,227,225,0.55);
+    color:#5FE3E1; font-weight:800; font-size:28px;
+    padding:14px 30px; border-radius:999px; letter-spacing:0.02em;
+    margin-bottom:30px;
+  }
+  .badge .dot{ width:16px; height:16px; border-radius:50%; background:#25D366; }
+
+  /* Tagline gigante */
+  .tagline{
+    position:relative; z-index:1;
+    font-size:74px; font-weight:800; line-height:1.08; letter-spacing:-0.015em;
+    max-width:1000px;
+  }
+  .tagline .teal{ color:#0EA5A4; }
+
+  /* Firma inferior (nodo teal) */
+  .foot{
+    position:relative; z-index:1;
+    margin-top:38px; display:flex; align-items:center; gap:14px;
+    color:#8FA2B8; font-size:24px; font-weight:600;
+  }
+  .foot .nodo{ width:14px; height:14px; border-radius:50%; background:#0EA5A4; }
+</style>
+</head>
+<body>
+  <div class="og">
+    <!-- Nombre / marca -->
+    <div class="brand">
+      <span class="bar"></span>
+      <span class="name">Proyecto de Gestión Tecnológica</span>
+    </div>
+
+    <!-- Gancho destacado -->
+    <span class="badge"><span class="dot"></span>Piloto gratis</span>
+
+    <!-- Tagline -->
+    <h1 class="tagline">Procesos automáticos, <span class="teal">resultados a la vista.</span></h1>
+
+    <!-- Firma -->
+    <div class="foot"><span class="nodo"></span>Startup de innovación tecnológica · ordenamos tu operación para decidir con datos.</div>
+  </div>
+</body>
+</html>

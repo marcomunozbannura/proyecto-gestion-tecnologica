@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Compartir — Piloto gratis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html,body{ width:1080px; height:1920px; overflow:hidden; }
+  body{ font-family:'Plus Jakarta Sans', sans-serif; background:#0B1F3A; color:#fff; position:relative; }
+  .glow{ position:absolute; top:-260px; left:50%; transform:translateX(-50%); width:1300px; height:1000px;
+         background:radial-gradient(ellipse at center, rgba(14,165,164,0.40), transparent 62%); }
+  .dots{ position:absolute; inset:0; background-image:radial-gradient(rgba(94,227,225,0.6) 2px, transparent 2px);
+         background-size:46px 46px; opacity:0.05; }
+  .pad{ position:relative; z-index:2; height:100%; padding:90px 84px 80px; display:flex; flex-direction:column; }
+  .pad>*{ flex-shrink:0; }
+
+  /* marca */
+  .brand{ display:flex; align-items:center; gap:22px; }
+  .brand .bar{ width:78px; height:10px; border-radius:5px; background:#0EA5A4; }
+  .brand .name{ font-size:36px; font-weight:700; color:#C3D0E0; letter-spacing:0.01em; }
+
+  /* badge piloto gratis */
+  .badge{ display:inline-flex; align-items:center; gap:20px; align-self:flex-start; margin-top:50px;
+          background:#25D366; color:#06381c; font-weight:800; font-size:50px; padding:26px 50px;
+          border-radius:999px; letter-spacing:0.01em; box-shadow:0 16px 44px rgba(37,211,102,0.4); }
+  .badge .bdot{ width:26px; height:26px; border-radius:50%; background:#06381c; }
+  .badge .sub{ font-size:30px; font-weight:700; color:#0c5a2e; }
+
+  /* titular */
+  .title{ font-size:90px; font-weight:800; line-height:1.07; letter-spacing:-0.02em; margin-top:44px; }
+  .title .t{ color:#0EA5A4; }
+  .lead{ font-size:40px; color:#C3D0E0; line-height:1.36; margin-top:30px; max-width:900px; }
+
+  /* antes / después */
+  .ba{ margin-top:42px; display:flex; border-radius:28px; overflow:hidden; border:2px solid rgba(255,255,255,0.18); position:relative; }
+  .ba .half{ flex:1; padding:38px 34px; min-height:290px; }
+  .ba .antes{ background:#1A2C4D; border-right:2px solid rgba(255,255,255,0.12); }
+  .ba .despues{ background:#0F3A46; }
+  .ba .tag{ font-size:32px; font-weight:800; letter-spacing:0.05em; text-transform:uppercase; }
+  .ba .antes .tag{ color:#8A95A5; }
+  .ba .despues .tag{ color:#5FE3E1; }
+  .ba .vis{ display:block; margin:20px auto 0; width:100%; max-width:200px; }
+  .ba .sw{ position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:130px; height:130px;
+           border-radius:50%; background:#0EA5A4; color:#fff; display:flex; align-items:center; justify-content:center;
+           font-size:66px; font-weight:800; box-shadow:0 0 0 16px rgba(11,31,58,0.92); }
+
+  /* bullets */
+  .bullets{ margin-top:44px; }
+  .b{ display:flex; align-items:center; gap:26px; font-size:42px; font-weight:600; color:#E6EDF6; margin:22px 0; }
+  .b .ck{ width:50px; height:50px; flex:none; }
+
+  /* CTA */
+  .cta{ margin-top:auto; }
+  .cta .btn{ display:flex; align-items:center; justify-content:center; gap:28px; background:#25D366; color:#06381c;
+             font-weight:800; font-size:56px; padding:46px; border-radius:28px; box-shadow:0 18px 50px rgba(37,211,102,0.45); }
+  .cta .btn svg{ width:60px; height:60px; }
+  .cta .nums{ display:flex; justify-content:center; gap:54px; margin-top:38px; font-size:40px; font-weight:700; color:#fff; }
+  .cta .nums .lbl{ color:#9FB0C3; font-weight:600; }
+  .cta .foot{ text-align:center; font-size:32px; color:#7E90A6; margin-top:30px; }
+</style>
+</head>
+<body>
+  <div class="glow"></div>
+  <div class="dots"></div>
+  <div class="pad">
+
+    <div class="brand"><span class="bar"></span><span class="name">Proyecto de Gestión Tecnológica</span></div>
+
+    <div class="badge"><span class="bdot"></span>PILOTO GRATIS <span class="sub">· sin compromiso</span></div>
+
+    <div class="title">Procesos automáticos, <span class="t">resultados a la vista.</span></div>
+    <div class="lead">¿Tu pyme funciona a pura planilla y WhatsApp? Te ordenamos la operación y la convertimos en información para decidir.</div>
+
+    <div class="ba">
+      <div class="half antes">
+        <div class="tag">Antes</div>
+        <svg class="vis" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+          <g stroke="#8593A8" stroke-width="2.5"><line x1="10" y1="40" x2="190" y2="40"/><line x1="10" y1="75" x2="190" y2="75"/><line x1="10" y1="110" x2="190" y2="110"/><line x1="70" y1="20" x2="70" y2="130"/><line x1="130" y1="20" x2="130" y2="130"/></g>
+          <line x1="80" y1="80" x2="120" y2="120" stroke="#E5534B" stroke-width="5"/>
+          <line x1="120" y1="80" x2="80" y2="120" stroke="#E5534B" stroke-width="5"/>
+        </svg>
+      </div>
+      <div class="half despues">
+        <div class="tag">Después</div>
+        <svg class="vis" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+          <g fill="#0EA5A4"><rect x="20" y="90" width="30" height="45" rx="3"/><rect x="65" y="70" width="30" height="65" rx="3"/><rect x="110" y="50" width="30" height="85" rx="3"/><rect x="155" y="28" width="30" height="107" rx="3"/></g>
+          <polyline points="35,82 80,62 125,42 170,22" fill="none" stroke="#5FE3E1" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="sw">&#8250;</div>
+    </div>
+
+    <div class="bullets">
+      <div class="b"><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="#0EA5A4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Menos horas a mano</div>
+      <div class="b"><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="#0EA5A4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Tu información, siempre al día</div>
+      <div class="b"><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="#0EA5A4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Sabes qué te deja ganancia</div>
+    </div>
+
+    <div class="cta">
+      <div class="btn">
+        <svg viewBox="0 0 24 24" fill="#06381c" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607z"/></svg>
+        Escríbenos por WhatsApp
+      </div>
+      <div class="nums">
+        <div><span class="lbl">Marco</span> +56 9 8174 3493</div>
+        <div><span class="lbl">Benjamín</span> +56 9 6835 8179</div>
+      </div>
+      <div class="foot">Startup de innovación tecnológica para pymes</div>
+    </div>
+
+  </div>
+</body>
+</html>
